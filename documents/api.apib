@@ -1,0 +1,54 @@
+FORMAT: 1A
+HOST: http://api.tf.com/v1
+
+# Financial Transactions API
+This project is my implementation of the Financial Transactions app which is the challenger project for the Rocketseat GoStak 2020 course.
+
+# Group API
+
+## Transactions API Root [/]
+
+# Group Transactions
+
+## Transactions [/transactions]
+
+### List transactions [GET]
+
++ Response 200 (application/json)
+    + Attributes (array[Transaction])
+    
++ Response 404 (application/json)
+    + Attributers (Error)
+
+### Create transaction [POST]
+
++ Request create a transaction
+  
+  + Headers
+    
+      Accept: application/json
+      Content-Type: application/jon
+  + Attributes(Transaction)
+
++ Response 200 (application/json)
+  + Attributes (Created)
+
++ Response 404 (application/json)
+  + Attributers (Error)
+
+# Data Structures
+
+## Transaction (object)
++ id: abc123 (string) - Id of transaction
++ title: Salario (string) - Title of transaction
++ value: 1000 (number) - Value of transaction
++ date: `2020-06-04` (string) - Date of transaction
++ type: income (string) - Type of transaction 'income' | 'outcome'
+
+## Created (object)
++ id: abc123 (string) - Id of transaction
+
+## Error (object)
++ code: 400 (number) - Status code
++ message(string) - Message of status
++ description(string) - Description of status
