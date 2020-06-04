@@ -1,15 +1,22 @@
-import { Router } from 'express';
+import { Router } from 'express'
+import { parseISO } from 'date-fns'
 
-// import TransactionsRepository from '../repositories/TransactionsRepository';
-// import CreateTransactionService from '../services/CreateTransactionService';
+import TransactionsRepository from '../repositories/TransactionsRepository'
+import CreateTransactionService from '../services/CreateTransactionService'
 
 const transactionRouter = Router();
-
-// const transactionsRepository = new TransactionsRepository();
+const transactionsRepository = TransactionsRepository
 
 transactionRouter.get('/', (request, response) => {
   try {
-    // TODO
+    const transactions = transactionsRepository.all()
+    const balance = transactionsRepository.getBalance()
+
+    return response.json({
+      transactions,
+      balance
+    })
+
   } catch (err) {
     return response.status(400).json({ error: err.message });
   }
@@ -17,10 +24,28 @@ transactionRouter.get('/', (request, response) => {
 
 transactionRouter.post('/', (request, response) => {
   try {
-    // TODO
-  } catch (err) {
-    return response.status(400).json({ error: err.message });
+    const { title, value, date, type } = request.body
+
+    const parsedDate = parseISO(date)
+
+    const createTransaction = new CreateTransactionService(
+      transactionsRepository
+    )
+
+    const transaction = createTransaction.execute({
+      title,
+      value,
+      date: parsedDate,
+      type
+    })
+
+    return response.json(transaction)
+
+  } catch (e) {
+
+      return response.status(400).json({ error: e.message })
   }
+
 });
 
-export default transactionRouter;
+export default transactionRouter
