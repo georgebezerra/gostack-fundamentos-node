@@ -1,13 +1,28 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/georgebezerra/gostack-fundamentos-node/badge.svg?targetFile=package.json)](https://snyk.io/test/github/georgebezerra/gostack-fundamentos-node?targetFile=package.json)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+
 
 # gostack-fundamentos-node
 This project is my implementation of the Financial Transactions app which is the challenger project for the Rocketseat GoStak 2020.
 
 This repository uses API Blueprint to generate API documentation. You can find the documentation here.
 
-Dependencies:
+## TypeScript Features
+- OOP
+- Interface
+
+---
+## Principles
+- Separation of Concerns (SoC)
+- Don't Repeat Yourself (DRY)
+- Single Responsability Principle (SRP)
+- Dependendy Inversion Principle (DIP)
+
+---
+
+## Dependencies:
 
 - Jest *25.3*
 - Eslint *6.8*
@@ -83,6 +98,8 @@ TRANSACTIONS
 - `GET  api/transactions` - Get all of the transactions
 
 
-Authors: George Bezerra
+
+
+Author: George Bezerra
 
 https://github.com/georgebezerra
