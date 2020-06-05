@@ -60,6 +60,8 @@ npm install -g typescript
 tsc --version
 ```
 
+---
+
 ## Getting Started
 
 Clone the repo and use `yarn` to install dependecies
@@ -90,6 +92,8 @@ yarn test
 yarn build
 ```
 
+---
+
 ## API Endpoint
 
 TRANSACTIONS
@@ -97,8 +101,7 @@ TRANSACTIONS
 - `POST api/transactions` - Add a new transaction
 - `GET  api/transactions` - Get all of the transactions
 
-
-
+---
 
 Author: George Bezerra
 
