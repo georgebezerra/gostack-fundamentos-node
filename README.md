@@ -2,6 +2,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.png?v=103)](https://github.com/ellerbrock/typescript-badges/)
 
 # gostack-fundamentos-node
 This project is my implementation of the Financial Transactions app which is the challenger project for the Rocketseat GoStak 2020.
