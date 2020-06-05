@@ -1,12 +1,15 @@
 {
-  "name": "backend-desafio",
+  "name": "backend-challenge",
   "version": "1.0.0",
+  "description": "This project is my implementation of the Financial Transactions app which is the challenger project for the Rocketseat GoStak 2020.",
+  "author":"George Bezerra",
+  "license": "GPL-3.0-or-later",
+  "repository":"https://github.com/georgebezerra/gostack-fundamentos-node",
   "main": "index.js",
-  "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts",
-    "test": "jest"
+    "test": "jest",
+    "dev:server": "ts-node-dev --inspect --transpileOnly --ignore-watch node_modules src/server.ts"
   },
   "devDependencies": {
     "@types/express": "^4.17.5",

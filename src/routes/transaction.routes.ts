@@ -5,7 +5,7 @@ import TransactionsRepository from '../repositories/TransactionsRepository'
 import CreateTransactionService from '../services/CreateTransactionService'
 
 const transactionRouter = Router();
-const transactionsRepository = TransactionsRepository
+const transactionsRepository = new TransactionsRepository()
 
 transactionRouter.get('/', (request, response) => {
   try {

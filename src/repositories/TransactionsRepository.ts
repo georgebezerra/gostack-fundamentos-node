@@ -1,5 +1,5 @@
-import { IBalance, IRequest } from '../interface'
 import Transaction from '../models/Transaction';
+import { IBalance, IRequest } from '../interface'
 
 class TransactionsRepository {
   private transactions: Transaction[];
@@ -10,6 +10,14 @@ class TransactionsRepository {
 
   public all(): Transaction[] {
     return this.transactions
+  }
+  
+  public create({ title, value, date, type}: IRequest): Transaction {
+      const transaction = new Transaction({ title, value, date, type })
+
+      this.transactions.push(transaction)
+
+      return transaction
   }
 
   public getBalance(): IBalance {
@@ -36,14 +44,6 @@ class TransactionsRepository {
 
     return { income, outcome, total }
   }
-
-  public create({ title, value, date, type}: IRequest): Transaction {
-      const transaction = new Transaction({ title, value, date, type })
-
-      this.transactions.push(transaction)
-
-      return transaction
-  }
 }
 
-export default new TransactionsRepository()
+export default TransactionsRepository
