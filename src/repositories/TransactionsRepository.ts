@@ -2,10 +2,10 @@ import Transaction from '../models/Transaction';
 import { IBalance, IRequest } from '../interface'
 
 class TransactionsRepository {
-  private transactions: Transaction[];
+  private transactions: Transaction[]
 
   constructor() {
-    this.transactions = [];
+    this.transactions = []
   }
 
   public all(): Transaction[] {
