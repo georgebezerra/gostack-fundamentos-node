@@ -1,4 +1,5 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/georgebezerra/gostack-fundamentos-node/badge.svg?targetFile=package.json)](https://snyk.io/test/github/georgebezerra/gostack-fundamentos-node?targetFile=package.json)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fgeorgebezerra%2Fgostack-fundamentos-node.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fgeorgebezerra%2Fgostack-fundamentos-node?ref=badge_shield)
 [![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
