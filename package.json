@@ -33,6 +33,6 @@
   "dependencies": {
     "date-fns": "^2.14.0",
     "express": "^4.17.1",
-    "uuidv4": "^6.1.0"
+    "uuidv4": "^6.1.1"
   }
 }
